@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/invoices');
 });
 
 Route::get('/invoices', ['uses' => 'InvoicesController@index']);
